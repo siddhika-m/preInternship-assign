@@ -1,0 +1,77 @@
+/* BODY */
+body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(135deg,  #1a1a1a,#000, #1a1a1a);
+    font-family: sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    width: 70%;
+    background: white;
+    margin: 40px auto;
+    padding:40px 30px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #E70000;
+    overflow: hidden; /* clears floats */
+    padding: 50px;
+}
+
+/* HERO TEXT */
+.hero-text {
+    width: 55%;
+    float: left;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* HERO LOGO */
+.hero-logo {
+    width: 35%;
+    float: right;
+    text-align: center;
+}
+
+.hero-logo img {
+    width: 140px;
+}
+
+/* BOTTOM CARDS */
+.cards {
+    background: #571212;
+    overflow: hidden;
+}
+
+/* SINGLE CARD */
+.card {
+    background: #571212;
+    width: 33.33%;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #f2cfcf;
+}
+
+.card h3 {
+    color: white;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
