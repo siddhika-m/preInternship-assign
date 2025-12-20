@@ -1,20 +1,55 @@
 <html>
-    <head>
-        <title> Redirect file</title>
-        <link rel="icon" type="image/png" href="images/logo.png">
-    </head>
-    <body>
-        <h2>HTML Assignments</h2>
-        <ol>
-        <li><a href="assign1.html" style="color: black;" target="_self"> Assignment 1</a><br></li>
-        <li><a href="assign2.html" style="color: black;" target="_self"> Assignment 2</a><br></li>
-        <li><a href="assign3.html" style="color: black;" target="_self"> Assignment 3</a><br></li>
-        </ol>
-        <h2>CSS Assignment</h2>
-        <ol>
-            <li><a href="assign4.html" style="color: black;" target="_self">Assignment 1</a></li>
-            <li><a href="assign5.html" style="color: black;" target="_self">Assignment 2</a></li>
-            <li><a href="assign6.html" style="color: black;" target="_self">Assignment 3</a></li>
-        </ol>
-    </body>
+
+<head>
+    <title> Redirect file</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <style>
+        * {
+            color: #FEFBEA;
+        }
+
+        body {
+            background-image: url(images/background1.jpg);
+            margin: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-shadow: 0px 0px 2px #FEFBEA;
+
+        }
+        ul {
+            list-style-type: circle;
+        }
+        li{
+            line-height: 35px;
+        }
+        h2,
+        li {
+            transition: all 0.2s ease-out;
+
+        }
+
+        h2:hover,
+        li:hover {
+            transform: scale(1.02);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h2>HTML Assignments</h2>
+    <ul>
+        <li><a href="assign1.html" target="_self"> Assignment 1</a><br></li>
+        <li><a href="assign2.html" target="_self"> Assignment 2</a><br></li>
+        <li><a href="assign3.html" target="_self"> Assignment 3</a><br></li>
+    </ul>
+    <h2>CSS Assignment</h2>
+    <ul>
+        <li><a href="assign4.html" target="_self">Assignment 1</a></li>
+        <li><a href="assign5.html" target="_self">Assignment 2</a></li>
+        <li><a href="assign6.html" target="_self">Assignment 3</a></li>
+    </ul>
+</body>
+
 </html>
