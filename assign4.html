@@ -3,30 +3,38 @@
 
 <head>
     <title>CSS Assignment 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
         body {
-            height: 100%;
             background: linear-gradient(155deg,
                     #000000,
                     #1a1a1a,
                     #000000);
+            height: 100%;
+        }
 
+        a {
+            color: white;
         }
 
         .container {
-
-            width: 50%;
+            width: 96%;
             background: white;
             padding: 30px;
-            margin: 40px auto;
-
+            margin: 10px auto;
         }
 
         .header {
-            height: 85px;
+            padding: 80px;
             background: #FF4DA6;
             margin-bottom: 15px;
         }
@@ -39,20 +47,20 @@
 
         .left {
             width: 63%;
-            height: 260px;
+            padding: 200px 2px;
             background: #FF037E;
             float: left;
         }
 
         .right {
             width: 35%;
-            height: 260px;
+            padding: 200px 1px;
             background: #CE0468;
             float: right;
         }
 
         .footer {
-            height: 85px;
+            padding: 80px;
             background: #802755;
         }
 
@@ -73,10 +81,11 @@
 </head>
 
 <body>
-    <a href="index.html" target="_parent" style="color: white;"><i class="fa-solid fa-house"></i>Index File</a><br><br>
+    <a href="index.html" target="_parent"><i class="fa-solid fa-house"></i>Index File</a>
     <div class="container">
 
-        <div class="header"></div>
+        <div class="header">
+        </div>
 
         <div class="middle">
             <div class="left"></div>

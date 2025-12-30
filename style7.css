@@ -1,41 +1,45 @@
-body {
-    margin: 2% 15%;
-    width: 60%;
+* {
+    box-sizing: border-box;
 }
 
 .mainbody {
     font-family: sans-serif;
     border: solid 1px black;
-
+    width: 96%;
+    margin: 10px auto;
+    font-size: 16px;
 }
 
 .navbar {
     background-color: #DDDDDD;
-    width: 100%;
-    overflow: hidden;
+    display: flex;
+    align-content: space-between;
 }
 
 .logo {
-    margin-top: 10px;
-    margin-left: 50px;
-    float: left;
+    padding: 0px 60px;
+    flex: 1;
 }
 
 .logo img {
-    width: 70%;
+    width: 100%;
+    max-width: 7rem;
+    min-width: 3rem;
 }
 
 .container {
-    float: right;
-    overflow: hidden;
+    flex: 1;
+    display: flex;
+
 }
 
 .tab {
-    float: left;
-    margin: 20px 30px;
-    padding: 15px;
+    flex: 1;
     color: #007694;
-    font-size: 16px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 35px 15px;
+
 }
 
 .tab:hover {
@@ -54,9 +58,9 @@ body {
 
 .b {
     display: inline-block;
-    padding: 5%;
+    padding: 2%;
     margin: 0% 6%;
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: 900;
 }
 
@@ -121,10 +125,10 @@ select {
     margin: 9px;
     padding: 5px 10px;
     width: 60%;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
-#submit{
+#submit {
     width: max-content;
     padding: 10px 30px;
 }
