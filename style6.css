@@ -1,81 +1,76 @@
-* {
-    box-sizing: border-box;
-}
-
-html,
 body {
-    height: 100%;
-    background: linear-gradient(135deg, #1a1a1a, #000, #1a1a1a);
+    background: #000000;
     font-family: sans-serif;
     font-size: 16px;
 }
+a{
+    color:#ffffff;
+}
 
-.container {
-    width: 90%;
+.main-body {
     background: white;
-    margin: 40px auto;
     padding: 30px;
+    margin: 10px auto;
 }
 
 .hero {
     background: #E70000;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hero-text {
     flex: 1;
     color: white;
-    padding: 30px 70px;
+    padding: 100px;
 }
 
 .hero-text h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 100;
     margin-bottom: 12px;
+    opacity: 0.9;
 }
 
 .hero-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     opacity: 0.8;
 }
 
 .hero-logo {
-    flex: 1;
-    text-align: center;
+    margin: 50px auto;
+    flex: 0.5;
 }
 
 .hero-logo img {
-    height: 100%;
-    min-height: 10rem;
-    max-height: 18rem;
-    
+    width: 100%;
+    min-width: 0.1rem;
+    max-width: 16rem;
+    padding-right: 30px;
 }
 
 .cards {
-    background: #571212;
+    background: #E70000;
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .card {
     background: #571212;
+    border-radius: 0;
     flex: 1;
-    padding: 40px;
+    padding: 40px 20px;
     color: #f2cfcf;
 }
 
-.middle {
-    border-left: 3px solid #e60000;
-    border-right: 3px solid #e60000;
-}
-
 .card h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: white;
 }
 
 .card p {
-    font-size: 1.3rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
     opacity: 0.5;
 }

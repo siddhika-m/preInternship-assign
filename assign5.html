@@ -7,104 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            background: linear-gradient(135deg,
-                    #E7EBEE,
-                    whitesmoke,
-                    #A8B2BC);
-            height: 100%;
-        }
-
-        .container {
-
-            width: 96%;
-            background: white;
-            padding: 30px;
-            margin: 10px auto;
-            text-align: center;
-            color: white;
-            font-family: sans-serif;
-            font-size: x-large;
-        }
-
-        .header {
-            padding: 75px;
-            background: #55D4EB;
-            margin-bottom: 10px;
-        }
-
-        .middle {
-            width: 100%;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-
-        .left {
-            padding: 180px 1px;
-            width: 28%;
-            background: #A0C263;
-            float: left;
-        }
-
-        .right {
-            width: 71%;
-            float: right;
-        }
-
-        .main {
-            padding: 126px 0px;
-            background: #F5C531;
-            margin-bottom: 10px;
-        }
-
-        .extra {
-            padding: 35px 0px;
-            background: #898989;
-        }
-
-        .footer {
-            padding: 75px;
-            background: #FFA500;
-        }
-
-        .header,
-        .left,
-        .right,
-        .footer {
-            transition: all 0.3s ease-out;
-        }
-
-        .header:hover,
-        .left:hover,
-        .right:hover,
-        .footer:hover {
-            transform: scale(1.02);
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style5.css">
 </head>
 
 <body>
-    <a href="index.html" target="_parent" style="color: black;"><i class="fa-solid fa-house"></i>Index File</a>
-    <div class="container">
+    <a href="index.html" target="_parent">
+        <i class="fa-solid fa-house"></i>Index File</a>
+    <div class="container-fluid main-body">
+        <header class="header">Header</header>
 
-        <div class="header">Header</div>
-
-        <div class="middle">
+        <section class="section">
             <div class="left">Sidebar</div>
             <div class="right">
                 <div class="main">Main Content</div>
                 <div class="extra">Extra Content</div>
             </div>
-        </div>
+        </section>
 
-        <div class="footer">Footer</div>
+        <footer class="footer">Footer</footer>
 
     </div>
 </body>
