@@ -401,21 +401,109 @@ body {
     background-color: #D0A904;
     color: white
 }
-.testimony-cards{
+
+.testimony-cards {
     display: flex;
     line-height: 3;
 }
-.testimony-card{
+
+.testimony-card {
     margin-right: 30px;
 }
 
-.testimony-card img{
+.testimony-card img {
     border-radius: 50%;
     height: 100px;
 }
 
-.testimony-card p{
+.testimony-card p {
     line-height: 1.5;
     font-weight: 200;
 }
 
+.blog {
+    padding: 100px;
+    color: #514460;
+}
+
+.posts {
+    display: flex;
+}
+
+.post {
+    background-color: white;
+    margin-right: 30px;
+    width: calc(100/3);
+}
+
+.post img {
+    width: 100%;
+}
+
+.post span {
+    font-size: x-large;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.post div {
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.footer {
+    background-color: #3A376C;
+    color: white;
+    font-weight: 500;
+    padding-left: 100px;
+}
+
+footer img {
+    height: 80px;
+}
+
+.quick-links {
+    margin: 40px auto;
+    display: flex;
+    width: 100%;
+}
+
+.links {
+    width: calc(100/3);
+    margin-right: 60px;
+    flex: 1;
+}
+
+.links span {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.parent{
+    margin-top: 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 60px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.child {
+    background-color: #D0A904;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+.child img{
+    width: 25px;
+}
+
+
+.footer input {
+    border: none;
+}
+
+.copyright {
+    color: grey;
+    text-align: center;
+}
