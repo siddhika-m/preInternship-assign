@@ -5,7 +5,7 @@
 }
 
 .mainbody {
-    background: #FBFAFF;
+    background: #F5F4FA;
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: 300;
@@ -104,7 +104,7 @@
     color: white;
 }
 
-.btn-outline:hover {
+.btn2-outline:hover, .btn-outline:hover {
     background: #D0A904;
     border: 2px solid #D0A904;
     color: white;
@@ -223,7 +223,7 @@
 .section-title-dark {
     text-align: justify;
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 250;
     color: #514460;
 }
 
@@ -278,6 +278,7 @@
     background-image: url(images/img-4.jpg);
     background-size: cover;
     color: white;
+    margin: 100px auto;
     font-weight: 500;
 }
 .section5 span{
@@ -290,4 +291,43 @@
 }
 .yellow:hover{
     color: #D0A904;
+}
+
+
+.pricing-plans{
+    text-align: center ;
+    color: #514460;
+    padding: 100px auto;
+}
+
+.title p{
+    margin: 50px auto 80px;
+}
+
+.plan-cards{
+    display: flex;
+}
+
+.plan-card {
+    background-color: white;
+    box-shadow: black;
+    font-weight: 300;
+    margin: auto 15px;
+    padding: 30px;
+}
+.plan-card span{
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 2.5;
+}
+
+.hide{
+    font-weight: 100;
+}
+
+.btn2-outline {
+    border: 2px solid #514460;
+    background: none;
+    color:#514460;
+    margin-bottom: 10px;
 }
