@@ -115,15 +115,11 @@
     margin-top: 60px;
 }
 
-.page {
-    padding: 10px;
-}
-
 .page2 {
     display: flex;
     gap: 5%;
     color: #514460;
-    margin: 5% auto;
+    margin: 100px auto;
 }
 
 .content-left {
@@ -177,7 +173,7 @@
     text-align: center;
     font-weight: 200;
     font-size: 3rem;
-    padding-top: 80px;
+    padding-top: 100px;
     color: white;
 }
 
@@ -220,7 +216,8 @@
 
 .page4 {
     background: #FBFAFF;
-    padding: 80px 0;
+    margin: 100px auto;
+
 }
 
 .section-title-dark {
@@ -247,7 +244,7 @@
 
 .portfolio-menu span {
     cursor: pointer;
-    padding: 30px ;
+    padding: 30px;
 
 }
 
@@ -276,3 +273,21 @@
     height: 100%;
 }
 
+
+.section5 {
+    background-image: url(images/img-4.jpg);
+    background-size: cover;
+    color: white;
+    font-weight: 500;
+}
+.section5 span{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.icons {
+    padding-top: 100px;
+    display: flex;
+}
+.yellow:hover{
+    color: #D0A904;
+}
