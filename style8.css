@@ -1,7 +1,7 @@
-body {
-    background: black;
-    margin: 1% 2%;
-    width: 96%;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .mainbody {
@@ -14,22 +14,20 @@ body {
 .wrapper {
     width: 90%;
     margin: auto;
+    padding-top: 0;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
-    /* CHANGE: flex instead of float */
     justify-content: space-between;
     align-items: center;
 }
 
 .logo img {
+
     width: 100%;
     max-width: 150px;
-    /* upper limit */
     min-width: 70px;
-    /* lower limit */
 }
 
 .nav {
@@ -38,28 +36,34 @@ body {
 }
 
 .nav-item {
-    padding: 0px 25px;
+    padding: 18px;
     font-size: medium;
     cursor: pointer;
 }
 
-.nav-item:hover,.portfolio-menu span:hover {
+.nav-item:hover,
+.portfolio-menu span:hover {
     width: max-content;
     background: #F6F7FC;
 }
 
 .nav-icon {
-    width: 2rem;
+    width: 3rem;
+    flex: 1.5;
 }
 
-/* ================= HERO ================= */
+.select {
+    color: rgba(17, 18, 49, 0.9);
+    margin-right: 20px;
+}
+
 .banner {
     background: url(images/img-1.jpg) no-repeat center/cover;
 }
 
 .overlay {
     background: rgba(17, 18, 49, 0.9);
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
 }
 
 .text-center {
@@ -70,13 +74,14 @@ body {
 .hero-title {
     font-size: 5rem;
     font-weight: 100;
-    padding-top: 12%;
+    padding-top: 230px;
     line-height: 1.2;
     margin: -0.45% 0% 0% 0%;
 }
 
 .hero-subtitle {
     font-weight: 300;
+    margin-top: 30px;
 }
 
 .select {
@@ -84,17 +89,15 @@ body {
     background: none;
 }
 
-/* ================= BUTTONS ================= */
 .btn {
     padding: 15px 30px;
     border-radius: 50px;
-    font-weight: 800;
+    font-weight: 700;
     cursor: pointer;
     margin: 30px 10px 70px 10px;
     letter-spacing: 2px;
 }
 
-/* CHANGE: reusable button variants */
 .btn-outline {
     border: 2px solid white;
     background: none;
@@ -103,7 +106,8 @@ body {
 
 .btn-outline:hover {
     background: #D0A904;
-    border: none;
+    border: 2px solid #D0A904;
+    color: white;
 }
 
 .down-arrow {
@@ -111,13 +115,15 @@ body {
     margin-top: 60px;
 }
 
-/* ================= PAGE 2 ================= */
+.page {
+    padding: 10px;
+}
+
 .page2 {
     display: flex;
     gap: 5%;
     color: #514460;
     margin: 5% auto;
-    width: 80%;
 }
 
 .content-left {
@@ -131,6 +137,7 @@ body {
 }
 
 .content-left p {
+    margin-top: 10px;
     width: 80%;
     font-weight: 200;
 }
@@ -141,7 +148,7 @@ body {
 
 .content-right img {
     width: 100%;
-    padding: auto;
+    object-fit: cover;
 }
 
 .highlight {
@@ -161,7 +168,6 @@ body {
     width: 10%;
 }
 
-/* ================= SERVICES ================= */
 .services-section {
     background: url(images/img-2.jpg) center/cover;
 
@@ -211,25 +217,28 @@ body {
 .buttons {
     text-align: center;
 }
-/* ================= PAGE 4 : PORTFOLIO ================= */
 
 .page4 {
-    background: #FBFAFF; 
+    background: #FBFAFF;
     padding: 80px 0;
 }
 
 .section-title-dark {
-    text-align:justify;
+    text-align: justify;
     font-size: 3rem;
     font-weight: 200;
     color: #514460;
-    margin-bottom: 40px;
 }
 
-/* Portfolio menu */
+.page4 p {
+    color: #514460;
+    margin: 40px auto;
+    font-weight: 200;
+}
+
 .portfolio-menu {
     display: flex;
-    gap: 30px;
+    color: #514460;
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 2px;
@@ -238,11 +247,10 @@ body {
 
 .portfolio-menu span {
     cursor: pointer;
+    padding: 30px ;
+
 }
 
-
-
-/* ================= PORTFOLIO GRID FIX ================= */
 
 .portfolio-grid {
     display: grid;
@@ -251,7 +259,6 @@ body {
     gap: 25px;
 }
 
-/* Tall cards like reference image */
 .portfolio-item:nth-child(1),
 .portfolio-item:nth-child(5) {
     grid-row: span 2;
@@ -259,15 +266,13 @@ body {
 
 .portfolio-item {
     width: 100%;
-    height: 100%;  
+    height: 100%;
     overflow: hidden;
 }
 
 .portfolio-item img {
     object-fit: cover;
     width: 100%;
-    height: 100%;  
+    height: 100%;
 }
-
-
 
