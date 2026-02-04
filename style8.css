@@ -278,32 +278,6 @@ body {
     height: 100%;
 }
 
-.portfolio-item:nth-child(2):hover,
-.portfolio-item:nth-child(3):hover,
-.portfolio-item:nth-child(4):hover,
-.portfolio-item:nth-child(6):hover,
-.portfolio-item:nth-child(7):hover {
-    transform: scale(0.94);
-    transition: 1sec ease-in-out;
-    border: solid 12px #C1DCE5;
-}
-
-.portfolio-item:nth-child(1):hover,
-.portfolio-item:nth-child(5):hover {
-    transform: scale(0.94);
-    transition: 1sec ease-in-out;
-    border: solid 12px #CFCFCF;
-}
-
-.hidden-overlay {
-    background: rgba(17, 18, 49, 0.9);
-    display: none;
-}
-
-.portfolio-item:hover+.hidden-overlay {
-    display: block;
-
-}
 
 .section5 {
     background-image: url(images/img-4.jpg);
