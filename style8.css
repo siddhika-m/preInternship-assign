@@ -96,12 +96,12 @@ body {
 }
 
 .btn {
-    padding: 15px 30px;
+    padding: 15px 40px;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     margin: 30px 10px 70px 10px;
-    letter-spacing: 2px;
+    font-size: small;
 }
 
 .btn-outline {
@@ -142,7 +142,7 @@ body {
 .content-left p {
     margin-top: 10px;
     width: 80%;
-    font-weight: 200;
+    opacity: 0.5;
 }
 
 .content-right {
@@ -185,7 +185,6 @@ body {
 }
 
 .services {
-    font-weight: 200;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
@@ -200,6 +199,7 @@ body {
 .service-card p {
     width: 80%;
     margin: 0% 10% 5% 10%;
+    opacity: 0.5;
 }
 
 .icon {
@@ -336,6 +336,7 @@ body {
 
 .title p {
     margin: 50px auto 80px;
+    opacity: 0.5;
 }
 
 .plan-cards {
@@ -357,7 +358,7 @@ body {
 }
 
 .hide {
-    font-weight: 100;
+    opacity: 0.1;
 }
 
 .btn2-outline {
@@ -418,12 +419,16 @@ body {
 
 .testimony-card p {
     line-height: 1.5;
-    font-weight: 200;
+    opacity: 0.5;
 }
 
 .blog {
     padding: 100px;
     color: #514460;
+}
+
+.blog p{
+    opacity: 0.5;
 }
 
 .posts {
@@ -469,7 +474,7 @@ footer img {
 }
 
 .links {
-    width: calc(100/3);
+    width: calc(100/4);
     margin-right: 60px;
     flex: 1;
 }
@@ -504,6 +509,7 @@ footer img {
 }
 
 .copyright {
-    color: grey;
+    color: white;
+    opacity: 0.3;
     text-align: center;
 }
