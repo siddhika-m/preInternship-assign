@@ -1,0 +1,31 @@
+* {
+    color: #FEFBEA;
+}
+
+body {
+    background-image: url(images/background1.jpg);
+    margin: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 0px 0px 2px #FEFBEA;
+
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    line-height: 35px;
+}
+
+h2,
+li {
+    transition: all 0.2s ease-out;
+
+}
+
+h2:hover,
+li:hover {
+    transform: scale(1.02);
+}
