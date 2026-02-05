@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+}
+
+.main-body{
+    text-align: center;
+}
+
+.panel button{
+    background-color: #E5EECC;
+    padding: 20px;
+    width: 100%;
+    border: solid 2px grey;
+    font-size: x-large;
+}
+
+.section{
+    background-color: #DFEDFF;
+    padding: 80px;
+    font-size: xx-large;
+}
+
