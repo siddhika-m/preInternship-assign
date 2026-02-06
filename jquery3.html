@@ -18,15 +18,15 @@
         <label for="lname">Last name:</label><br>
         <input type="text" name="lname" id="lname" placeholder="Enter last name"><br>
         <br>
-        <button>Submit</button>
+        <button class="submit">Submit</button>
     </form>
 </body>
 <script>
     $(document).ready(function(){
-        ("button").click(function(){
-            ("fname")
-        })
-    })
+        $(".submit").click(function(){
+            alert("Please fill all the fields.");
+        });
+    });
 </script>
 
 </html>
