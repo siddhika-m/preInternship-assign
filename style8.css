@@ -11,10 +11,16 @@ li {
 
 ul {
     padding: 0;
+    margin: 0;
 }
 
-.page-padding {
-    padding: 100px auto;
+a{
+    text-decoration: none;
+    color: #514460;
+}
+
+section {
+    padding: 100px 0px;
 }
 
 .mainbody {
@@ -24,25 +30,23 @@ ul {
 }
 
 .navbar {
-    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    padding: 0;
 }
 
 .logo img {
     width: 100%;
     max-width: 210px;
     object-fit: cover;
-    padding: 0;
     margin: 0;
 }
 
 .nav {
     align-items: center;
     justify-content: space-around;
-    padding: 10px auto;
     flex-wrap: nowrap;
 }
 
@@ -78,20 +82,19 @@ ul {
     margin-right: 20px;
     border: none;
     background: none;
+    outline: none;
 }
 
 .banner {
     background: url(images/img-1.jpg) center/cover;
+
 }
 
 .overlay {
     background: rgba(17, 18, 49, 0.9);
-    padding: 100px ;
 }
 
-#banner-id{
-    padding: 100px 100px 50px 100px;
-}
+
 .text-center {
     text-align: center;
     color: white;
@@ -140,7 +143,6 @@ ul {
 
 .page2 {
     color: #514460;
-    margin: 100px auto;
 }
 
 .page-display {
@@ -239,11 +241,6 @@ ul {
     text-align: center;
 }
 
-.page4 {
-    margin: 100px auto;
-
-}
-
 .section-title-dark {
     text-align: justify;
     font-size: 3rem;
@@ -285,6 +282,7 @@ ul {
 .portfolio-item {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .portfolio-item:nth-child(1),
@@ -300,12 +298,12 @@ ul {
 
 .hidden-box {
     display: none;
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(17, 18, 49, 0.9);
     border: solid 10px #C2DDE6;
-    bottom: 280px;
+    bottom: 0px;
     right: 0px;
     color: white;
     justify-content: center;
@@ -333,8 +331,7 @@ ul {
 }
 
 .sk {
-    bottom: 600px;
-    border: solid 10px #C2DDE6;
+    border: solid 10px #CFCFCF;
 
 }
 
@@ -350,7 +347,6 @@ ul {
 .section5 {
     background: url(images/img-4.jpg) center/cover;
     color: white;
-    padding: 100px auto;
     font-weight: 500;
     text-align: center;
 }
@@ -365,15 +361,17 @@ ul {
     padding: auto 50px;
     justify-content: center;
 }
-.yellow{
+
+.yellow {
     width: 25%;
 }
 
-.yellow p{
+.yellow p {
     font-weight: 600;
     font-size: large;
     margin-bottom: 10px;
 }
+
 .yellow:hover {
     color: #D0A904;
 }
@@ -381,11 +379,10 @@ ul {
 .pricing-plans {
     text-align: center;
     color: #514460;
-    padding: 100px;
 }
 
 .title p {
-    margin: 50px auto 80px; 
+    margin: 50px auto 80px;
     opacity: 0.5;
 }
 
@@ -435,7 +432,7 @@ ul {
     font-weight: 200;
 }
 
-.T-title p{
+.T-title p {
     font-weight: 400;
     opacity: 0.5;
 }
@@ -463,11 +460,11 @@ ul {
     margin: 30px;
 }
 
-.testimony-card .highlight{
+.testimony-card .highlight {
     margin-bottom: 0;
 }
 
-.testimony-card i{
+.testimony-card i {
     margin-top: 0;
     font-size: x-small;
 }
@@ -478,8 +475,6 @@ ul {
 }
 
 .blog {
-    padding-top: 100px;
-    padding-bottom: 100px;
     color: #514460;
 }
 
@@ -510,10 +505,12 @@ ul {
 .post div {
     padding: 30px;
 }
-.blog button{
+
+.blog button {
     margin: 15px;
     margin-left: 0;
 }
+
 .footer {
     background-color: #3A376C;
     color: white;
@@ -544,33 +541,44 @@ footer img {
 }
 
 .links li {
-    opacity: 0.8;
     font-size: small;
     padding: 0;
 }
 
+.links a{
+    color: white;
+    opacity: 0.8;
+}
 .parent {
     display: flex;
-    background-color: white;
-    border-radius: 50px;
     width: 90%;
-    height: 50px;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .parent input {
-    width: 81%;
-    padding-left: 30px;
+    width: 80%;
+    height: 50px;
     border-radius: 50px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: white;
+    padding-left: 30px;
+    outline: none;
 }
 
 .child {
     background-color: #D0A904;
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     width: 20%;
+    height: 50px;
+    position: absolute;
+    right: 0;
     text-align: center;
 }
 
