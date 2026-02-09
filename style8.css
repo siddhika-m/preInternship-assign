@@ -90,6 +90,9 @@ section {
 
 }
 
+#banner-id{
+    padding-bottom: 50px;
+}
 .overlay {
     background: rgba(17, 18, 49, 0.9);
 }
