@@ -77,6 +77,7 @@ a {
     padding: 20px;
     margin: 0px;
     font-size: medium;
+    position: relative;
     cursor: pointer;
 }
 
@@ -98,11 +99,26 @@ a {
 }
 
 #blog-tab::after {
-    content: "▼";
-    margin: auto 3px;
+    content: "🢓";
+    margin: auto 5px;
+    margin-top: 7px;
     align-items: center;
-    font-size: x-small;
+    font-size: smaller;
     font-weight: 800;
+}
+.hover-box{
+    display: none;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: -60px;
+    right: 45px;
+    z-index: 2;
+    color: #3A376C;
+    background-color: white;
+}
+
+#blog-tab:hover + .hover-box{ 
+    display: block;
 }
 
 /*main*/
@@ -113,21 +129,27 @@ a {
 
 }
 
-#banner-id {
-    padding-bottom: 40px;
-}
-
-.let-overlay{
+.banner::before,
+.services-section::before,
+.section5::before,
+.testimonials::before {
+    content: "";
     background: rgba(17, 18, 49, 0.9);
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 1;
     top: 0;
+    left: 0;
+
 }
-.overlay {
-    background: rgba(17, 18, 49, 0.9);
-   
-    /*Generic*/
+.overlay{
+    z-index: 2;
+    position: relative;
+}
+
+#banner-id {
+    padding-bottom: 40px;
 }
 
 .text-center {
@@ -238,13 +260,11 @@ a {
 
 .section-title {
     font-weight: 200;
-    opacity: 0.9;
     font-size: 3rem;
 }
 
 .services {
     display: flex;
-    opacity: 0.9;
     justify-content: space-between;
 }
 
@@ -281,6 +301,7 @@ a {
     font-weight: 250;
     color: #514460;
 }
+
 .page4 p {
     color: #514460;
     margin: 30px auto;
@@ -306,7 +327,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 280px;
-    gap: 40px;
+    gap: 20px;
 }
 
 
@@ -328,7 +349,7 @@ a {
 }
 
 .hidden-box {
-    opacity: 0;
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -368,8 +389,8 @@ a {
 
 }
 
-.hidden-box:hover {
-    opacity: 1;
+.portfolio-item:hover > .hidden-box {
+    display: block;
 }
 
 /*Section 5*/
@@ -405,6 +426,7 @@ a {
 .yellow:hover {
     color: #D0A904;
 }
+
 /*Pricing Plans*/
 .pricing-plans {
     text-align: center;
@@ -444,6 +466,7 @@ a {
     color: #514460;
     margin-bottom: 10px;
 }
+
 /*Testimonials*/
 .testimonials {
     background: url(images/img-3.jpg) center/cover;
