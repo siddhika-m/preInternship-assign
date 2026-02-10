@@ -6,35 +6,43 @@
     <title> Assignments</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <h2>HTML Assignments</h2>
-    <ul>
+    <h2 class="html">HTML Assignments</h2>
+    <ul class="show-html">
         <li><a href="assign1.html" target="_self"> Assignment 1</a><br></li>
         <li><a href="assign2.html" target="_self"> Assignment 2</a><br></li>
         <li><a href="assign3.html" target="_self"> Assignment 3</a><br></li>
     </ul>
-    <h2>CSS Assignments</h2>
-    <ul>
+    <h2 class="css">CSS Assignments</h2>
+    <ul class="show-css">
         <li><a href="assign4.html" target="_self">Assignment 1</a></li>
         <li><a href="assign5.html" target="_self">Assignment 2</a></li>
         <li><a href="assign6.html" target="_self">Assignment 3</a></li>
     </ul>
-    <h2>CSS Advanced Assignments</h2>
-    <ul>
+    <h2 class="adv">CSS Advanced Assignments</h2>
+    <ul class="show-adv">
         <li><a href="assign7.html" target="_self">Assignment 1</a></li>
         <li><a href="assign8.html" target="_self">Assignment 2</a></li>
     </ul>
-   <h2>Jquery Assignments</h2>
-    <ul>
+    <h2 class="jquery">Jquery Assignments</h2>
+    <ul class="show-jquery">
         <li><a href="jquery1.html" target="_self">JQuery 1</a></li>
-        <li><a href="jquery2.html" target="_self">JQuery 2</a></li>  
+        <li><a href="jquery2.html" target="_self">JQuery 2</a></li>
         <li><a href="jquery3.html" target="_self">JQuery 3</a></li>
         <li><a href="jquery4.html" target="_self">JQuery 4</a></li>
         <li><a href="jquery4.html" target="_self">JQuery 5</a></li>
-    </ul> 
-    
+    </ul>
 </body>
+<script>
+    $(document).ready(function () {
+        $("h2").click(function(){
+            $(this).next("ul").toggle("slow");
+        })
+    });
+</script>
 
 </html>
