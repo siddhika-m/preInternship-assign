@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>JQuery 3</title>
     <meta name="viweport">
@@ -18,13 +17,18 @@
         <label for="lname">Last name:</label><br>
         <input type="text" name="lname" id="lname" placeholder="Enter last name"><br>
         <br>
-        <button class="submit">Submit</button>
+        <input type="submit" value="Submit" class="submit">
     </form>
 </body>
 <script>
     $(document).ready(function(){
         $(".submit").click(function(){
-            alert("Please fill all the fields.");
+            var txt1 = $("#fname").val();
+            var txt2 = $("#lname").val();
+
+            if( txt1 == "" || txt2 == ""){
+                alert("Please fill all the fields of the form.");
+            }
         });
     });
 </script>

@@ -189,6 +189,7 @@ a {
 .btn-outline:hover {
     background: #D0A904;
     border: 2px solid #D0A904;
+    color: white;
 }
 
 .down-arrow {
@@ -528,6 +529,7 @@ a {
     opacity: 0.5;
 }
 
+/*Blog page*/
 .blog {
     color: #514460;
 }
@@ -565,6 +567,7 @@ a {
     margin-left: 0;
 }
 
+/*Footer*/
 .footer {
     background-color: #3A376C;
     color: white;
