@@ -15,17 +15,26 @@
     <a href="index.html" target="_parent"><i class="fa-solid fa-house"></i>Index File</a><br><br>
     <div class="main-body">
         <div class="panel">
-            <button>Click me to slide down panel</button>
+            <button id="panel">Click me to slide down panel</button>
         </div>
-        <section class="section">Hello World!</section>
+        <section class="section" id="section">Hello World!</section>
     </div>
 </body>
 <script>
-$(document).ready(function () {
+
+    $(document).ready(function () {
         $(".panel").click(function () {
             $(".panel").slideUp("slow");
         });
     });
+    /*
+
+    let panel = document.getElementById("panel");
+    let section = document.getElementById("section");
+    panel.onclick = function(){
+        panel.style.display= "none";
+    } 
+    */
 </script>
 
 

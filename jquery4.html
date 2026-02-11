@@ -37,7 +37,7 @@
             position: fixed;
             right: 40px;
             top: 40px;
-            font-size:2.5rem ;
+            font-size: 2.5rem;
         }
 
         .main-body {
@@ -50,24 +50,24 @@
     <a href="index.html" target="_parent">
         <i class="fa-solid fa-house"></i>Index File</a>
     <div class="container-fluid main-body">
-        <div class="overlay"><span class="close-x">X</span>
+        <div class="overlay" id="overlay"><span class="close-x" id="x">X</span>
             <p>I am the POP UP</p>
         </div>
-        <header class="header">Header</header>
+        <header class="header" id="header">Header</header>
         <main class="section">
-            <div class="left">Sidebar</div>
+            <div class="left" id="sidebar">Sidebar</div>
             <div class="right">
-                <div class="main">Main Content</div>
-                <div class="extra">Extra Content</div>
+                <div class="main" id="main">Main Content</div>
+                <div class="extra" id="extra">Extra Content</div>
             </div>
         </main>
-        <footer class="footer">Footer</footer>
+        <footer class="footer" id="footer">Footer</footer>
     </div>
 </body>
 <script>
     $(document).ready(function () {
-        $(".header").click(function () {
-            $(".header").css("background-color", "brown");
+        $("#header").click(function () {
+            $("#header").css("background-color", "brown");
         });
         $(".left").click(function () {
             $(".left").text("Leftbar");
@@ -80,8 +80,33 @@
         });
         $(".close-x").click(function () {
             $(".overlay").css("display", "none");
-        })
-    })
+        });
+    });
+
+    /*
+    let header = document.getElementById('header');
+    header.onclick = function () {
+        header.style.backgroundColor ="brown";
+    };
+    let sidebar = document.getElementById('sidebar');
+    sidebar.onclick = function(){
+        sidebar.innerHTML = "Leftbar";
+    };
+    let overlay = document.getElementById("overlay");
+    let footer = document.getElementById("footer");
+    footer.onclick = function(){
+        overlay.style.display = "block";
+    }
+    let main= document.getElementById("main");
+    let extra =document.getElementById("extra");
+    extra.onclick= function(){
+        main.style.opacity= 0.1;
+    }
+    let close = document.getElementById("x");
+    close.onclick =function(){
+        overlay.style.display="none";
+    }
+    */
 </script>
 
 </html>

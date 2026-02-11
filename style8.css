@@ -4,6 +4,40 @@
     padding: 0;
 
 }
+/*Elements*/
+section {
+    padding: 100px 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #514460;
+}
+
+/*Generic*/
+.page-display {
+    display: flex;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.section-title-dark {
+    text-align: justify;
+    font-size: 3rem;
+    font-weight: 250;
+    color: #514460;
+}
 
 .nav a:focus,
 .links a:focus {
@@ -16,10 +50,6 @@
 img:focus {
     outline: 1px solid white;
     outline-offset: 5px;
-}
-
-section {
-    padding: 100px 0px;
 }
 
 /*body*/
@@ -58,21 +88,6 @@ section {
     flex: 1;
 }
 
-li {
-    list-style-type: none;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #514460;
-}
-
-
 .nav-item {
     padding: 20px;
     margin: 0px;
@@ -106,6 +121,7 @@ a {
     font-size: smaller;
     font-weight: 800;
 }
+
 .hover-box{
     display: none;
     padding: 20px 30px;
@@ -122,11 +138,11 @@ a {
 }
 
 /*main*/
+
 /*banner*/
 .banner {
     background: url(images/img-1.jpg) center/cover;
     position: relative;
-
 }
 
 .banner::before,
@@ -143,6 +159,7 @@ a {
     left: 0;
 
 }
+
 .overlay{
     z-index: 2;
     position: relative;
@@ -198,12 +215,6 @@ a {
 }
 
 /*page2*/
-.page-display {
-    display: flex;
-}
-
-/*Generic*/
-
 .content-left {
     color: #514460;
     flex: 0.8;
@@ -225,12 +236,6 @@ a {
 .content-right {
     flex: 1.2;
 }
-
-.highlight {
-    font-weight: 700;
-}
-
-/*Generic*/
 
 .point {
     display: flex;
@@ -296,13 +301,6 @@ a {
 }
 
 /*Portfolio Page*/
-.section-title-dark {
-    text-align: justify;
-    font-size: 3rem;
-    font-weight: 250;
-    color: #514460;
-}
-
 .page4 p {
     color: #514460;
     margin: 30px auto;
@@ -330,7 +328,6 @@ a {
     grid-auto-rows: 280px;
     gap: 20px;
 }
-
 
 .portfolio-item {
     width: 100%;
