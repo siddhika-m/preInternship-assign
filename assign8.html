@@ -16,18 +16,18 @@
 
 <body>
     <div class="mainbody">
-        <header class=" container navbar">
+        <header class=" container navbar" id="navbar">
             <div class="logo"> <a href="index.html" target="_parent">
                     <img src="images/head_logo.jpg" alt="logo"></a>
             </div>
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <ul>
-                    <li class="nav-item"><a href="#"> Home</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Services</a></li>
-                    <li class="nav-item"><a href="#">Portfolio</a></li>
-                    <li class="nav-item"><a href="#">Price</a></li>
-                    <li class="nav-item" id="blog-tab"><a href="#"> Blog
+                    <li class="nav-item"><a href="#home"> Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#price">Price</a></li>
+                    <li class="nav-item" id="blog-tab"><a href="#blog"> Blog
                     <li class="hover-box">Blog</li></a></li>
 
                     <a href="#" class="nav-"><img src="images/mail.jpg" class="nav-icon" alt="mail"></a>
@@ -35,7 +35,7 @@
             </nav>
         </header>
         <main>
-            <section class="banner ">
+            <section class="banner" id="home">
                 <div class="text-center overlay" id="banner-id">
                     <h1 class="hero-title">
                         We Will <span class="highlight">Make</span> Your
@@ -51,10 +51,10 @@
                         <button class="btn btn-outline">DISCOVER NOW</button>
                     </div>
 
-                    <img src="images/icons/darrow.png" class="down-arrow" alt="down arrow">
+                    <a href="#about"><img src="images/icons/darrow.png" class="down-arrow" alt="down arrow"></a>
                 </div>
             </section>
-            <section class="page2 ">
+            <section class="page2" id="about">
                 <div class="container page-display">
                     <div class="content-left">
                         <h2>Hello <span class="highlight">World</span></h2>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
             </section>
-            <section class="services-section">
+            <section class="services-section" id="services">
                 <div class="overlay">
                     <div class="container">
                         <h2 class=" section-title ">
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </section>
-            <section class="page4">
+            <section class="page4" id="portfolio">
                 <div class="container">
                     <h2 class="section-title-dark">
                         <span class="highlight">Good design</span> is obvious <br>
@@ -227,7 +227,7 @@
                     </div>
                 </div>
             </section>
-            <section class="pricing-plans  ">
+            <section class="pricing-plans" id="price">
                 <div class="container">
                     <div>
                         <div class="title">
@@ -267,7 +267,7 @@
                     </div>
                 </div>
             </section>
-            <section class="testimonials ">
+            <section class="testimonials">
                 <div class="overlay">
                     <div class="container">
                         <div class="T-title ">
@@ -303,7 +303,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blog-page ">
+            <section class="blog-page" id="blog">
                 <div class="container blog">
                     <div class="title ">
                         <h2 class="section-title-dark "> Latest <span class="highlight">blog</span> posts
@@ -346,7 +346,7 @@
                     <div class="links">
                         <span>Company</span>
                         <ul>
-                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#about">ABOUT</a></li>
                             <li><a href="#">SUPPORT</a></li>
                             <li><a href="#">PRESS</a></li>
                             <li><a href="#">LEGAL & PRIVACY</a></li>
